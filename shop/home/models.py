@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-=======
 from django.db import models
 from django.contrib.auth.models import User
 
-class Customer (models>Model):
+class Customer (models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE,null=True,blank=True)
     name = models.CharField(max_length=255 ,null=True)
     email = models.CharField(max_length=255,null=True)
@@ -48,9 +46,4 @@ class ShippingAddress(models.Model):
 
     def __str__(self):
         return self.address
-
-
-
-
->>>>>>> backent
 
